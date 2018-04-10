@@ -1,0 +1,291 @@
+@import "fonts";
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+.container {
+  width: 81.94444444444444%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #03050a;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+  }
+}
+
+.main {
+  overflow: hidden;
+  background: linear-gradient(#111723 82.5%, #000000);
+
+  .top__block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url("../img/Background.png");
+    background-size: cover;
+
+    &:before {
+      content: url("../img/Design element-01.png");
+      position: absolute;
+      top: 185px;
+      left: -280px;
+      transform: scale(2);
+      z-index: 50;
+    }
+
+    &:after {
+      content: url("../img/Design element-02.png");
+      position: absolute;
+      top: 335px;
+      right: -310px;
+      transform: scale(2);
+      z-index: 50;
+    }
+
+    .top__block__title {
+      font-family: "Roboto";
+      font-weight: 100;
+      font-size: 2.875rem;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      width: 56.1864406779661%;
+      text-transform: uppercase;
+      margin: 83px 0;
+    }
+
+    .btn__group {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      margin-bottom: 245px;
+      z-index: 60;
+
+      &:after {
+        position: absolute;
+        content: url("../img/arrows-down.png");
+        top: 250px;
+        left: 50%;
+      }
+
+      .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 248px;
+        height: 73px;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 4px solid #ffffff;
+        background-color: rgba(255, 255, 255, 0.15);
+        margin-right: 40px;
+      }
+
+      .market {
+        @extend .about;
+        color: #111725;
+        background-color: rgba(255, 255, 255, 1);
+        margin-right: 0;
+      }
+    }
+  }
+
+  .about__block {
+    .about__block__title {
+      position: relative;
+      font-family: "Roboto";
+      font-size: 1.625rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-top: 130px;
+      margin-bottom: 40px;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        position: relative;
+        top: -7px;
+        width: 63px;
+        height: 2px;
+        background-color: #fff;
+        margin-right: 20px;
+      }
+
+      &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 14px;
+        width: 80.6%;
+        height: 2px;
+        background-color: #fff;
+        margin-left: 20px;
+      }
+    }
+
+    .information__block {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+
+      &:after {
+        content: url("../img/about-to-market.png");
+        display: block;
+        position: relative;
+        top: 19px;
+        left: 61%;
+        margin-bottom: 38px;
+      }
+
+      .information__img {
+        width: 59.49152542372881%;
+      }
+
+      .information__descr {
+        width: 40.459322%;
+        color: #ffffff;
+        font-family: "Roboto";
+        line-height: 34px;
+        background-color: #090C12;
+        padding: 17px 0 17px 20px;
+
+        &__title {
+          font-size: 1.25rem;
+          font-weight: 400;
+          text-transform: uppercase;
+          margin-top: 0;
+          letter-spacing: 0.18em;
+        }
+
+        &__text {
+          font-weight: 300;
+          margin-bottom: 0;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+  }
+
+  .market__block {
+    &__title {
+      position: relative;
+      font-family: "Roboto";
+      font-size: 1.625rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 40px;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        position: relative;
+        top: -7px;
+        width: 63px;
+        height: 2px;
+        background-color: #fff;
+        margin-right: 20px;
+      }
+
+      &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 14px;
+        width: 80.6%;
+        height: 2px;
+        background-color: #fff;
+        margin-left: 20px;
+      }
+    }
+
+    table {
+      width: 100%;
+      font-family: "Roboto";
+      font-weight: 500;
+      font-size: 1rem;
+      color: #ffffff;
+      text-align: center;
+      border-collapse: collapse;
+      word-wrap: break-word;
+      word-break: break-all;
+      white-space: normal;
+      border: 2px solid #ffffff;
+      margin-bottom: 383px;
+
+      th {
+        height: 50px;
+        border: 2px solid #ffffff;
+      }
+
+      tr, td{
+
+        border: 1px solid #ffffff;
+        border-collapse: collapse;
+      }
+
+      tr {
+        td {
+         &:nth-of-type(1) {
+           width: 50px;
+         }
+        }
+
+        .zzz {
+          color: #2190bf;
+          text-decoration: underline;
+          text-align: left;
+          vertical-align: center;
+          height: 70px;
+
+
+          &:before {
+            content: url("../img/icon-bitcoin.png");
+            display: inline-block;
+            margin: 14px 24px 22px 14px;
+            transform: translateY(10px);
+          }
+        }
+
+        .zzz1 {
+          color: #2190bf;
+          text-decoration: underline;
+          text-align: left;
+          vertical-align: center;
+          height: 70px;
+
+          &:before {
+            content: url("../img/icon-ethereum.png");
+            display: inline-block;
+            margin: 0 24px 30px 14px;
+            transform: translateY(20px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "media-queries";

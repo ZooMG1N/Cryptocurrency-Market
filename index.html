@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+<header class="header">
+    <section class="container">
+        <div class="header__wrapper">
+            <img src="img/Logo-for-site.png" alt="" class="logo">
+        </div>
+    </section>
+</header>
+
+<main class="main">
+    <section class="top__block">
+        <div class="container">
+            <h1 class="top__block__title">cryptocurrency market capitalizations</h1>
+            <div class="btn__group">
+                <a href="#about" class="about">about</a>
+                <a href="#market" class="market">market</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about__block" id="about">
+        <div class="container">
+            <p class="about__block__title">about</p>
+            <div class="information__block">
+                <img src="img/Photo-about.png" alt="" class="information__img">
+                <div class="information__descr">
+                    <p class="information__descr__title">blockchain</p>
+                    <p class="information__descr__text">The validity of each cryptocurrency's coins is provided by a blockchain.
+                        A blockchain is a continuously growing list of records, called blocks, which are linked and secured using cryptography.
+                        Each block typically contains a hash pointer as a link to a previous block, a timestamp and transaction data.
+                        By design, blockchains are inherently resistant to modification of the data.
+                        It is "an open, distributed ledger that can record transactions between two parties efficiently and in a verifiable and permanent way".
+                        For use as a distributed ledger, a blockchain is typically managed by a peer-to-peer network collectively adhering to a protocol for validating new blocks.
+                        Once recorded, the data in any given block cannot be altered retroactively without the alteration of all subsequent blocks,
+                        which requires collusion of the network majority.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="market__block" id="market">
+        <div class="container">
+            <p class="market__block__title">market</p>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Market Cap</th>
+                    <th>Price</th>
+                    <th>Volume (24h)</th>
+                </tr>
+                <tr class="tr-test">
+                    <td>1</td>
+                    <td class="zzz">Bitcoin</td>
+                    <td>$156684620698</td>
+                    <td>$9264.29</td>
+                    <td>$5757790000.0</td>
+
+                </tr>
+                <tr class="tr-test2">
+                    <td>2</td>
+                    <td class="zzz1">Ethereum</td>
+                    <td>$70118542474.0</td>
+                    <td>$753.896</td>
+                    <td>$714.61</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</main>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+<script src="js/data.js"></script>
+</body>
+</html>
